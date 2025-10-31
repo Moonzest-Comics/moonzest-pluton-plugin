@@ -6,6 +6,17 @@
  */
 
 /*
+ * Filters and Fixes
+ */
+
+// change WordPress API URL to HOME URL
+add_filter('rest_url', 'wptips_home_url_as_api_url');
+function wptips_home_url_as_api_url($url) {
+    $url = str_replace(home_url(),site_url() , $url);
+    return $url;
+}
+
+/*
  * Custom Post Types and Taxonomies
  */
 function moonzest_custom_post_type() {
