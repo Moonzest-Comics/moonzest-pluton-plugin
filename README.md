@@ -1,2 +1,2 @@
-# moonzest-plugin
+# moonzest-pluton-plugin
 Plugin controlling backend functionality of the Pluton Comics Network
